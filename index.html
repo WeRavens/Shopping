@@ -1,0 +1,55 @@
+
+  
+  
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+     body {
+    margin: 0;
+    background: #87ceeb; /* Langit biru */
+    overflow: hidden;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 200px;
+    background: rgba(0, 119, 190, 0.8);
+    border-radius: 50%;
+    animation: waveAnimation 10s infinite linear;
+  }
+
+  .wave:nth-child(2) {
+    animation-delay: -5s;
+    opacity: 0.5;
+  }
+
+  @keyframes waveAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div class="wave"></div>
+    <div class="wave"></div>
+    <script>
+        for (let i = 0; i < 100; i++) {
+    const flame = document.createElement('div');
+    flame.className = 'fire';
+    flame.style.left = `${Math.random() * 100}vw`;
+    flame.style.background = `hsl(${Math.random() * 50 + 30}, 100%, 50%)`;
+    flame.style.animationDuration = `${Math.random() * 1 + 1.5}s`;
+    flame.style.animationDelay = `${Math.random()}s`;
+    document.body.appendChild(flame);
+  }
+      </script>  
+</body>
+</html>  
