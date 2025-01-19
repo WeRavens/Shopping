@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern+Guides&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+    .logo {
+  font-family: "Playwrite NG Modern Guides", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    /* Reset Body */
+    body, html {
+      
+      background: linear-gradient(to right, #141e30, #006d7b, #005d6f);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Mencegah scroll horizontal */
+    }
+
+    header {
+      background: linear-gradient(to right, #141e30, #006d7b, #005d6f);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+
+      color: aqua;
+      text-align: center;
+
+      font-family: "Audiowide", sans-serif;
+      text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+    }
+    
+
+    nav {
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      padding: 10px 5px;
+      background: linear-gradient(90deg, #005d6f, #243b55, #141e30);
+      background-size: 300% 300%;
+      animation: gradientMove 10s infinite ease-in-out;
+      color: white; /* Supaya teks terlihat */
+    }
+  
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Logo */
+    .logo {
+      padding-left: 11px;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: rgb(0, 234, 255);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* Search Bar */
+    .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .search-container input {
+      background: linear-gradient(90deg, #005d6f, #243b55, #141e30);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #00ffd0;
+      outline: none;
+    }
+    
+
+    .search-container button {
+      padding: 5px 10px;
+      background-color: aqua;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-container button:hover {
+      background-color: rgb(0, 234, 255);
+    }
+
+    /* Menu Button */
+    .menu-button {
+      display: none;
+      background-color: aqua;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 11px;
+      cursor: pointer;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      
+      nav, header {
+        overflow: hidden;
+        overflow-x: hidden;
+        width: 100vw;
+      }
+      .nav-links a {
+        text-shadow: #000000 0px 4px 2px;
+        color: #0aecdd;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(to right, #43cea2, #185a9d);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links.active {
+        width: auto;
+        padding: 7px;
+        flex-direction:row-reverse;
+        display: flex;
+        border-radius: 20px;
+        
+        animation: gradientMove 10s ease infinite;
+      }
+
+      .menu-button {
+        padding-right: 5vw;
+        z-index: 1000;
+        display: inline-block;
+      }
+      
+    }
+    .maincard {
+      height: 100%;
+      background: linear-gradient(to right, #141e30, #006d7b, #005d6f);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+
+
+        display: flex;
+        flex-wrap: wrap; /* Memungkinkan elemen turun ke baris berikutnya */
+        padding: 10px;
+        width: 100%;
+        /* border: 2px solid rgb(210, 0, 0); */
+        justify-content: center;
+        gap: 30px; /* Memberi jarak antar elemen */
+        
+    }
+    
+    
+    
+    
+    .card img {
+      display: inline;
+      border-radius: 40% 5px 40% 5px ;
+        width: 100%; /* Gambar memenuhi seluruh lebar kartu */
+        height: 200px; /* Gambar memenuhi seluruh tinggi kartu */
+        object-fit: cover; /* Gambar tetap proporsional */
+    }
+    
+    
+    .des {
+      text-align: center;
+      
+      border-radius:   0px 44px 0px 44px;
+      border: solid rgb(6, 255, 255) ;
+    }
+    .card {
+      margin: 2.3% 0px;
+      width: 145px;
+    }
+    /* Tambahkan efek box-shadow saat hover pada des */
+.des:hover  {
+  box-shadow: 0 7px 11px rgb(4, 209, 255);
+  transition: box-shadow 0.3s ease; /* Efek animasi transisi */
+}
+
+/* Alternatif: hover pada card mempengaruhi photo di dalamnya */
+.card:hover .photo {
+  border-right: 0px;
+  box-shadow: 0px 0px 0px 11px black;
+  transform: scale(1.05);
+  box-shadow: 11px 0px 0px 0px rgb(2, 209, 255);
+  transition: box-shadow 0.3s ease;
+}
+.photo {
+  border-right: 2px solid rgb(2, 209, 255);
+}
+.dess {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  box-shadow: 0 6px 6px rgb(0, 255, 238);
+  border-radius: 10% 40% 5% 40% ;
+}
+.des{
+  color: aqua;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+
+
+  font-family: "Inconsolata", serif;
+}
