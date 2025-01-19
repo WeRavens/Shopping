@@ -1,55 +1,119 @@
-
-  
-  
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-     body {
-    margin: 0;
-    background: #87ceeb; /* Langit biru */
-    overflow: hidden;
-  }
-
-  .wave {
-    position: absolute;
-    bottom: 0;
-    width: 200%;
-    height: 200px;
-    background: rgba(0, 119, 190, 0.8);
-    border-radius: 50%;
-    animation: waveAnimation 10s infinite linear;
-  }
-
-  .wave:nth-child(2) {
-    animation-delay: -5s;
-    opacity: 0.5;
-  }
-
-  @keyframes waveAnimation {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<head>
+  <link rel="icon" type="image/x-icon" href="naga.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Search</title>
+ <link rel="stylesheet" href="radjj.css">
 </head>
-<body><div class="wave"></div>
-    <div class="wave"></div>
-    <script>
-        for (let i = 0; i < 100; i++) {
-    const flame = document.createElement('div');
-    flame.className = 'fire';
-    flame.style.left = `${Math.random() * 100}vw`;
-    flame.style.background = `hsl(${Math.random() * 50 + 30}, 100%, 50%)`;
-    flame.style.animationDuration = `${Math.random() * 1 + 1.5}s`;
-    flame.style.animationDelay = `${Math.random()}s`;
-    document.body.appendChild(flame);
-  }
-      </script>  
+<body>
+  <header>
+    <div class="grd"><h1>WERAVENS.ID</h1></div>    
+    
+  </header>
+  <nav>
+    <!-- Logo -->
+    <div class="logo"><i class="fa-solid fa-bag-shopping"></i></div>
+    
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="https://www.w3schools.com/#gsc.tab=0&gsc.q=strong" target="_blank">HOME</a></li>
+      <li><a href="https://wa.me/6285174202647?text=pesan
+        ">CONTACT</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">ABOUT</a></li>
+    </ul> 
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search..." style="color: rgb(0, 0, 0);">
+      <button type="button"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Menu Button -->
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+  </nav>
+  <!-- kartu -->
+  <div class="maincard">
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+    <div class="card"><img src="photo_2025-01-18_08-33-47.jpg" alt="" class="photo">
+      <div class="dess" style="padding: 3px;"><div class="des"><p><strong>SABUN</strong></p></div></div> 
+     </div>
+
+</div>
+</div>
+   
+
+  
+
+  
+ 
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+    
+    // gelembung
+   
+    
+  </script>
+  
 </body>
-</html>  
+</html>
